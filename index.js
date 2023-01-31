@@ -38,7 +38,8 @@ app.post("/",function(req,response,err){
 })
 
 async function  jsonCall(incomingData){
-  let url = `https://cliq.zoho.com/company/64396901/api/v2/channelsbyname/apitestingb/message?zapikey=1001.8690e3b26a53b3f3a879853428de4d3f.d6f77b0e08b607fe39a18273b241ae82`;
+  let url = `https://cliq.zoho.com/api/v2/bots/dsmbot/incoming?zapikey=1001.8690e3b26a53b3f3a879853428de4d3f.d6f77b0e08b607fe39a18273b241ae82`
+  // let url = `https://cliq.zoho.com/company/64396901/api/v2/channelsbyname/apitestingb/message?zapikey=1001.8690e3b26a53b3f3a879853428de4d3f.d6f77b0e08b607fe39a18273b241ae82`;
   fetch(`${url}`, {
     method: "POST",
     body: JSON.stringify(incomingData),
